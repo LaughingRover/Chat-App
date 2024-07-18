@@ -1,6 +1,6 @@
 # Simple Chat Application (Single Client-Server Model)
 
-A basic chat application that allows users to communicate in real-	time, including features like creating user profiles, sending messages, and receiving notifications.
+A basic chat application that allows users to communicate in real-time, including features like creating user profiles, sending messages, and receiving notifications.
 
 ## Road Map
 
@@ -23,25 +23,25 @@ A basic chat application that allows users to communicate in real-	time, includi
 
 E.g
 
-	server									|	client
-	-------------------------------------------------------------------------------
+	server						|	client
+	------------------------------------------------------------------------------------------
 	Open socket
 	Start listening
-												Client will create a socket
-												Try to connect to server
+								Client will create a socket
+								Try to connect to server
 	Server will accept or reject connection
 	Server will wait for any data in recv
-												If accepted, send a string
-												Wait for the response from server
+								If accepted, send a string
+								Wait for the response from server
 	Server will recv the string and print
 	The user will type a response and
 	send it to the client and wait
-												Accept and send again
+								Accept and send again
 	Accept and send again
 	...
 	...
 	...
-												Client will close when its done.
+								Client will close when its done.
 	Server will wait for some other client
 	or it may close.
 
